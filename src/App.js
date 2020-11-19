@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import {sum, diff} from './utility.js';
+import NameTag from './NameTag.js';
+
+const pi = 3.14;
+const static_value = 1000;
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NameTag name = "격하게" tag="집에" colo="red"/>
+      <NameTag name = "아무것도" tag="보내"/>
+      <NameTag name = "하기싫다" tag="줘라"/>
     </div>
   );
 }
